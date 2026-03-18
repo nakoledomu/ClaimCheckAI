@@ -1,4 +1,4 @@
-# ClaimCheckAI
+# Credentia
 AI agent used for verifying information and credibility of sources
 
 ## Disclaimer
@@ -38,8 +38,8 @@ This installation process will download [Ollama](https://ollama.com/) model on y
   ```
 2. Clone the repository
   ```
-  git clone https://github.com/nakoledomu/ClaimCheckAI.git
-  cd ClaimCheckAI
+  git clone https://github.com/nakoledomu/Credentia.git
+  cd Credentia
   ```
 3. Setup python
   ```
