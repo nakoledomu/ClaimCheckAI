@@ -31,7 +31,7 @@ Please note these facts, before installing:
 This installation process will download Ollama model on your device. For more information about Ollama visit their [official site](https://ollama.com/)
 1. Ollama installatinon
 
-  You can try different model, that will be more compatible with your hardware, if you want. Please look at the [Recomended Ollama models](#recomended-ollama-models) section.
+  You can try different model, that will be more compatible with your hardware, if you want. Please look at the [Recommended Ollama models](#recommended-ollama-models) section.
   ```
   irm https://ollama.com/install.ps1 | iex
   ollama pull llama3:8b # You can swap this with different model
