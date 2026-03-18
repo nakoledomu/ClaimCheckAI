@@ -21,12 +21,12 @@ Users are responsible for independently verifying any information before relying
 
 Use at your own discretion.
 
-## Installation
+# Installation
 
 Please note these facts, before installing:
   - It will take some space. Disk space used on the device may vary depending on downloaded Ollama model
 
-### Windows
+## Windows
 
 This installation process will download Ollama model on your device. For more information about Ollama visit their [official site](https://ollama.com/)
 1. Ollama installatinon
@@ -57,7 +57,7 @@ This installation process will download Ollama model on your device. For more in
   ```
   Credibly should launch. Performance of Credibly may very depending on your hardware.
 
-## Recommended Ollama Models
+# Recommended Ollama Models
 
 This project runs locally using [Ollama](https://ollama.com/). For best results, choose a model with solid reasoning ability, since credibility evaluation requires structured analysis and nuance.
 
