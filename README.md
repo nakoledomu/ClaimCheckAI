@@ -38,7 +38,7 @@ This installation process will download [Ollama](https://ollama.com/) model on y
   ```
 2. Clone the repository
   ```
-  got clone https://github.com/nakoledomu/ClaimCheckAI.git
+  git clone https://github.com/nakoledomu/ClaimCheckAI.git
   cd ClaimCheckAI
   ```
 3. Setup python
