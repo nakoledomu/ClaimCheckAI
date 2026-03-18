@@ -1,4 +1,4 @@
-# Credibly
+# SourceLens
 AI agent used for verifying information and credibility of sources
 
 ## Disclaimer
@@ -38,8 +38,8 @@ This installation process will download Ollama model on your device. For more in
   ```
 2. Clone the repository
   ```
-  git clone https://github.com/nakoledomu/Credibly.git
-  cd Credibly
+  git clone https://github.com/nakoledomu/sourcelens.git
+  cd sourcelens
   ```
 3. Setup python
   ```
@@ -50,12 +50,12 @@ This installation process will download Ollama model on your device. For more in
 4. Launch
 
   You can now launch Credible by running main.py in the `.\venv\` virtual environment (or install requirements and launch everything globaly)
-  Go to your cloned Credibly repo and run this:
+  Go to your cloned SourceLens repo and run this:
   ```
   .\venv\Scripts\activate
   .\main.py
   ```
-  Credibly should launch. Performance of Credibly may very depending on your hardware.
+  SourceLens should launch. Performance may very depending on your hardware.
 
 # Recommended Ollama Models
 
