@@ -28,7 +28,7 @@ Please note these facts, before installing:
 
 ## Windows
 
-This installation process will download Ollama model on your device. For more information about Ollama visit their [official site](https://ollama.com/)
+This installation process will download [Ollama](https://ollama.com/) model on your device.
 1. Ollama installatinon
 
   You can try different model, that will be more compatible with your hardware, if you want. Please look at the [Recommended Ollama models](#recommended-ollama-models) section.
