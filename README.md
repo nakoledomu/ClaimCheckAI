@@ -23,13 +23,14 @@ Use at your own discretion.
 
 ## Installation
 
-Please note these facts, before installing Credibly:
+Please note these facts, before installing:
   - It will take some space. Disk space used on the device may vary depending on downloaded Ollama model
 
 ### Windows
 
 This installation process will download Ollama model on your device. For more information about Ollama visit their [official site](https://ollama.com/)
 1. Ollama installatinon
+
   You can try different model, that will be more compatible with your hardware, if you want. Please look at the [Recomended Ollama models](#recomended-ollama-models) section.
   ```
   irm https://ollama.com/install.ps1 | iex
@@ -56,5 +57,47 @@ This installation process will download Ollama model on your device. For more in
   ```
   Credibly should launch. Performance of Credibly may very depending on your hardware.
 
-## Recomended Ollama models
+## Recommended Ollama Models
 
+This project runs locally using [Ollama](https://ollama.com/). For best results, choose a model with solid reasoning ability, since credibility evaluation requires structured analysis and nuance.
+
+If unsure, start with `llama3:8b` — it provides the best overall performance for credibility and verification tasks in this project.
+
+### Recommended (Balanced Performance)
+  
+  `llama3:8b`
+  
+  - Best balance between reasoning quality and hardware requirements
+  
+  - Good at structured, analytical responses
+  
+  - Works well on machines with 16GB RAM
+  
+  ```
+  ollama pull llama3:8b
+  ```
+
+### Lightweight Option (Lower RAM)
+
+  `mistral:7b`
+  
+  - Faster and more memory-efficient
+  
+  - Suitable for machines with 8GB RAM
+  
+  - Slightly weaker reasoning compared to Llama 3
+  
+  ```
+  ollama pull mistral:7b
+  ```
+### Higher Reasoning Power (Stronger Hardware)
+
+  `llama3:13b`
+  
+  - Better analytical depth and consistency
+  
+  - Recommended if you have 24GB+ RAM or a capable GPU
+  
+  ```
+  ollama pull llama3:13b
+  ```
