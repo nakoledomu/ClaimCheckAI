@@ -6,8 +6,7 @@ Credentia is an experimental AI assistant focused on evaluating the credibility 
 
 # Installation
 
-Please note these facts, before installing:
-  - It will take some space. Disk space used on the device may vary depending on downloaded Ollama model
+This process will install Credenta and Ollama on your device.
 
 ## Windows
 
