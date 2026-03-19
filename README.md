@@ -1,25 +1,8 @@
 # Credentia
 AI agent used for verifying information and credibility of sources
 
-## Disclaimer
-
-This project is an experimental AI system designed to assist with evaluating the credibility of information sources and claims. It is intended for research, educational, and development purposes only.
-
-The system:
-
-- Uses large language models (LLMs) to analyze information.
-
-- May rely on external data sources, search results, or model training knowledge.
-
-- Can produce incorrect, incomplete, outdated, or misleading information.
-
-- Does not guarantee factual accuracy.
-
-This tool does not replace professional fact-checking, journalistic investigation, legal advice, academic research, or expert review.
-
-Users are responsible for independently verifying any information before relying on it. The creators and contributors of this project are not liable for decisions made based on the system’s outputs.
-
-Use at your own discretion.
+# About
+Credentia is an experimental AI assistant focused on evaluating the credibility of information sources and factual claims. Built with local models like llama3:8b (via Ollama) and guided by structured reasoning prompts, Credentia is designed to provide evidence-based assessments and transparent explanations. It is not a replacement for professional fact-checking, but a tool to assist developers, researchers, and curious users in exploring automated information verification.
 
 # Installation
 
@@ -101,3 +84,23 @@ If unsure, start with `llama3:8b` — it provides the best overall performance f
   ```
   ollama pull llama3:13b
   ```
+
+# Disclaimer
+
+This project is an experimental AI system designed to assist with evaluating the credibility of information sources and claims. It is intended for research, educational, and development purposes only.
+
+The system:
+
+- Uses large language models (LLMs) to analyze information.
+
+- May rely on external data sources, search results, or model training knowledge.
+
+- Can produce incorrect, incomplete, outdated, or misleading information.
+
+- Does not guarantee factual accuracy.
+
+This tool does not replace professional fact-checking, journalistic investigation, legal advice, academic research, or expert review.
+
+Users are responsible for independently verifying any information before relying on it. The creators and contributors of this project are not liable for decisions made based on the system’s outputs.
+
+Use at your own discretion.
