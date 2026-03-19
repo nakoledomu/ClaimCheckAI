@@ -1,4 +1,6 @@
 import os
+import whois
+from datetime import datetime
 from llm_axe import OnlineAgent
 from langchain_ollama.llms import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
@@ -15,6 +17,9 @@ Evaluate the credibility of the following source in an objective and evidence-ba
 
 Source to evaluate:
 {source_name}
+
+WHOIS DATA:
+{whois_data}
 
 Instructions:
 - Do not assume facts you do not know.
@@ -55,11 +60,14 @@ llm = OllamaLLM(model="llama3:8b")
 prompt = ChatPromptTemplate.from_template(template)
 
 class LocalOnlineAgent(OnlineAgent):
-    def search(self, source_name: str) -> str:
-         prompt_text = self.prompt.format(source_name=source_name)
-
-         response = self.llm.invoke(prompt_text)
-         return response
+    def search(self, source_name: str, whois_data: str) -> str:
+      prompt_text = self.prompt.format(
+         source_name=source_name,
+         whois_data=whois_data,
+         bbc_results="",   # placeholders for now
+         reuters_results=""
+      )
+      return self.llm.invoke(prompt_text)
 
 onlineAgent = LocalOnlineAgent(llm)
 onlineAgent.prompt = template
@@ -72,14 +80,28 @@ def get_unique_filename():
       counter += 1
    return filename
 
+def get_whois_domain_info(domain):
+    try:
+        w = whois.whois(domain)
+        return {
+            "domain_name": w.domain_name,
+            "creation_date": w.creation_date,
+            "expiration_date": w.expiration_date,
+            "registrar": w.registrar,
+            "country": w.country
+        }
+    except Exception as e:
+        return {"error": str(e)}
+
 while True:
    print("\n\n---------------------------")
    source_name = input("Enter your source (q to quit): ")
    print("\n\n")
    if source_name == "q":
       break
-
-   resp = onlineAgent.search(source_name)
+   
+   whois_data = get_whois_domain_info(source_name)
+   resp = onlineAgent.search(source_name, whois_data)
    print(resp)
    print("\n\n---------------------------")
    saving = input("Do you want to save as .md file? (Y/n): ")
